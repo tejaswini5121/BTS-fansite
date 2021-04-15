@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Login </title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background-color:black;
+  background-image: url(https://i.pinimg.com/originals/ba/de/cd/badecded67a56f595b21a0c2b9566bb9.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 500px;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("http://images6.fanpop.com/image/photos/41800000/BTS-bts-41811919-1920-1280.jpg");
+
+  /* Full height */
+  height: 100%; 
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header h1 {
+  font-family: Bradley Hand ITC;
+  font-size: 50px;
+}
+
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #262626;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 20%;
+  padding-left: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Forms */
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+  width: 75%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 75%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+/* Header/Blog Title */
+.header {
+  padding: 150px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+<div class="bg">
+<div class="header">
+    <center><h1> 
+<marquee>
+<font color="white">W</front>
+<font color="purple">E</front>
+<font color="white">L</front>
+<font color="purple">C</front>
+<font color="white">O</front>
+<font color="purple">M</front>
+<font color="white">E</front>
+ 
+<font color="purple">A</front>
+<font color="white">R</front>
+<font color="purple">M</front>
+<font color="white">Y</front>
+<font color="purple">!</front>
+<font color="white">!</front>
+<font color="purple">!</front>
+</h1></center></font>
+</marquee>
+</div>
+</div>
+
+<div class="topnav">
+  <a href="/">Home</a>
+  <a href="#a1">About BTS</a>
+  <a href="BT21.html">BT21</a>
+  <a href="Timeline.html">Timeline</a>
+  <a href="Me.html" style="float:right">About Me</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+<form action="#" method="post">
+  <div class="imgcontainer">
+    <img src="https://pbs.twimg.com/profile_images/1128537304962715648/olSBxfTy_400x400.jpg" alt="A.R.M.Y" class="avatar">
+  </div>
+<center>
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required><br>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required><br>
+        
+    <button type="submit">Login</button>
+    <label><br>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+</center>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+    </div>
+    <div class="card">
+      <h1><font face="Broadway"><img src="https://banner2.cleanpng.com/20190119/iof/kisspng-bts-army-logo-k-pop-hip-hop-music-bts-sticker-by-rafael-molko-5c43c353856258.4814341915479447875464.jpg" height="40" width="30">BTS</h1></font>
+      <h2><b><font face="Castellar">Bangtan Sonyeondan</b></h2></font>
+      <center> 
+<a href="https://www.allkpop.com/upload/2018/06/content/bts_1528297832_Screen_Shot_2018-06-06_at_11.08.42_AM.png">
+<img src="https://www.allkpop.com/upload/2018/06/content/bts_1528297832_Screen_Shot_2018-06-06_at_11.08.42_AM.png" ></a></center>
+      
+<font face="Century Schoolbook"> 
+<p id="a1">BTS has been taking the world by strom for a while now,and there are no signs of them slowing down. With a massive following on a global scale, if you haven't heard of this prominent K-Pop boy band by now, you should start getting used to seeing them everywhere! </p>
+      <p>
+Hailing from South Korea, BTS is now the biggest boy band in the world, topping charts and setting records. Since their debut in 2013, the seven member group - which consists of RM, Jin, Suga, J-Hope, Jimin, V and Jung Kook - have grown beyond the bounds of traditional K-pop acts, making a splash everywhere from Chile to California. Their devoted followers, styled as "ARMY," have kept them trending on social media at most public appearances, while their musical releases, like the latest one, "Boy With Luv" have broken records on YouTube and international and domestic charts.</p>
+<br>
+<h5><center>Credits of content to respective owners.</center></h5></div>
+</div>
+
+  <div class="rightcolumn">
+    <div class="card">
+      <font face="Bradley Hand ITC"><b>
+      <h2>About Me: </h2>
+      <center><img src="https://pbs.twimg.com/profile_images/1128537304962715648/olSBxfTy_400x400.jpg" height="120" width="100"></center>
+      <p>I am Tejaswini Sirisha M<br> Roll No: 180340062<br>
+            I am studying in B Tech 3rd year in ECE. </p>
+    </div></font>
+</b>
+ 
+<div class="card">
+<a href="https://i.pinimg.com/564x/05/2f/12/052f12f9b227409e2a5f1d38e7980b70.jpg">      
+<img src="https://i.pinimg.com/564x/05/2f/12/052f12f9b227409e2a5f1d38e7980b70.jpg" width="100%" height="40%"></a>
+<a href="https://i.pinimg.com/564x/dc/1e/2f/dc1e2f85fe7f493809f423f1d88c6948.jpg">      
+      <img src="https://i.pinimg.com/564x/dc/1e/2f/dc1e2f85fe7f493809f423f1d88c6948.jpg" width="100%" height="40%"></a>
+<a href="https://i.pinimg.com/564x/9e/58/47/9e58478a92c6a05b6a7549e27fbb51c3.jpg">      
+     <img src="https://i.pinimg.com/564x/9e/58/47/9e58478a92c6a05b6a7549e27fbb51c3.jpg" width="100%" height="40%"></a>
+      </div>
+    <div class="card">
+      <h3>Follow BTS  at</h3>
+      <a href="https://twitter.com/BTS_twt"><img src="https://images.techhive.com/images/article/2016/02/twitter-icon-logo-100644740-large.jpg" height="40" width="60"></a>
+      <a href="https://www.youtube.com/user/BANGTANTV"><img src="https://www.horologyhouse.com/wp-content/uploads/2018/03/kisspng-youtube-play-button-logo-computer-icons-youtube-icon-app-logo-png-5ab067d1d569b4.6593511515215103538742.jpg" height="40" width="60"></a>
+      <a href="https://www.instagram.com/bts.bighitofficial/?hl=en"><img src="https://image.shutterstock.com/image-photo/kiev-ukraine-may-14-2016-260nw-420838831.jpg" height="40" width="60"></a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

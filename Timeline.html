@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Timeline</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+
+/* Header/Blog Title */
+.header {
+  padding: 100px;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("https://wallpapercave.com/wp/wp2457315.jpg");
+
+  /* Full height */
+  height: 50%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header h1 {
+  font-family: Bradley Hand ITC;
+  font-size: 50px;
+}
+
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #262626;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+body {
+ background-image: url("https://i.pinimg.com/originals/ba/de/cd/badecded67a56f595b21a0c2b9566bb9.jpg");
+ background-repeat: no-repeat;
+  background-size: cover;
+ 
+  font-family: Helvetica, sans-serif;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+  left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+  left: 0%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="bg">
+<div class="header">
+ <font color="white"><h1 style="text-align:right;">My favourite </h1><br>
+  <h1 style="text-align:right;"> K-POP Boy band </h1></font>
+</div>
+</div>
+
+<div class="topnav">
+  <a href="/">Home</a>
+  <a href="BT21.html">BT21</a>
+  <a href="Timeline.html">Timeline</a>
+  <a href="Login.html" style="float:right">Login</a>
+  <a href="Me.html" style="float:right">About Me</a>
+</div>
+
+<font face="Calisto MT">
+<center><h1> <p style="font-size:50px;">TIMELINE 2013-21 </p></h1></center><br>
+
+
+<div class="timeline">
+  <div class="container left">
+    <div class="content">
+      <h2>2021</h2>
+      <p> There are quite many achievements already!! One of the most remarkable achivement is <b> GRAMMYs.</b>
+        They have performed to their own song DYNAMITE on GRAMMYs.<br>
+        Also there are many World Records that they have broken till now. Here are a few websites for seeing list of their achievements.
+        <ul>
+          <li><a href="https://bts.fandom.com/wiki/List_of_Records_Set_and_Broken">List of Records Set & Broken</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_BTS">Wikipedia</a></li>
+          <li><a href="https://bts.fandom.com/wiki/List_of_Awards_and_Nominations">List of Awards & Nominations</a></li>
+        </ul>
+      </p>
+      </div>
+  </div>
+
+  <div class="container right">
+    <div class="content">
+      <h2>2020</h2>
+      <p>
+        <b>Well, achievements BTS has made are far more than my ability to type :P<br></b>
+        So, I am putting link to a website which of of our ARMYs have already made!!<br>
+        <a href="https://allforarmy.com/more/about-bts/awards-achievements/#">2020 Achievements</a><br>
+        <h6>Yes, I am Lazy.</h6>
+      </p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>2019</h2>
+      <ul>
+        <li><b>33st Golden Disk Awards</b> - Digital Bonsang: Fake Love</li>
+        <li><b>33st Golden Disk Awards</b> - Disk Bonsang: K-pop Contribution Award</li>
+        <li><b>33st Golden Disk Awards</b> - Disk Daesang: Love Yourself: Answer</li>
+        <li><b>33st Golden Disk Awards</b> - Popularity Award</li>
+        <li><b>33st Golden Disk Awards</b> - Most Popular K-pop Star</li>
+        <li><b>33st Golden Disk Awards</b> - Global V Live Best Artist Award</li>
+        <li><b>28th Seoul Music Awards</b> - Bonsang Award</li>
+        <li><b>28th Seoul Music Awards</b> - Daesang Award</li>
+        <li><b>28th Seoul Music Awards</b> - Record of the Year (Album): Love Yourself: Tear</li>
+        <li><b>Bravo Otto Awards</b> - Best Group/Duo</li>
+        <li><b>Global V Live Awards</b> — Global Artist Top 10</li>
+        <li><b>Global V Live Awards</b> — Best Channel – 10 million followers</li>
+        <li><b>Global V Live Awards</b> — Video of the Year</li>
+        <li><b>Global V Live Awards</b> — Best V Original: Run BTS!</li>
+        <li><b>Edaily Culture Awards</b> — Best Concert</li>
+        <li><b>Gaon Chart Music Awards</b> - Album of the Year – 2st Quarter: Love Yourself: Tear</li>
+        <li><b>Gaon Chart Music Awards</b> - Album of the Year– 3st Quarter: Love Yourself: Answer</li>
+        <li><b>Gaon Chart Music Awards</b> - K-pop Contribution Award</li>
+        <li><b>16th Korean Music Awards</b> — Song of the Year : Fake Love</li>
+        <li><b>16th Korean Music Awards</b> — Best Pop Song: Fake Love</li>
+        <li><b>16th Korean Music Awards</b> — Musician of the Year</li>
+        <li><b>28th Gaffa-Prisen Awards</b> — Best International Band</li>
+        <li><b>28th Gaffa-Prisen Awards</b> — Best International Album: Love Yoourself: Answer</li>
+        <li><b>6th iHeartRadio Music Awards</b> - Best Fan Army</li>
+        <li><b>31st Japan Gold Disc Awards</b> — Album of the Year (Asia): Face Yourself</li>
+        <li><b>31st Japan Gold Disc Awards</b> — Best 3 Albums: Face Yourself</li>
+        <li><b>31st Japan Gold Disc Awards</b> — Best 3 Albums: Love Yourself: Answer</li>
+        <li><b>31st Japan Gold Disc Awards</b> — Best Music Videos (Asia): 2017 BTS Live Trilogy Episode III: The Wings Tour ~Special Edition~ @Kyocera Dome</li>
+        <li><b>10th Philippine K-pop Awards</b> — Best Male Group</li>
+        <li><b>The Fact Music Awards</b> — Artist of The Year</li>
+        <li><b>The Fact Music Awards</b> — U+Idol Live Popularity Award</li>
+        <li><b>The Fact Music Awards</b> — Best Album: Love Yourself: Answer</li>
+        <li><b>The Fact Music Awards</b> — Daesang (Grand Prize)</li>
+        <li><b>Billboard Music Awards</b> - Top Duo / Group</li>
+        <li><b>Billboard Music Awards</b> - Top Social Artist Award</li>
+        <li><b>Gaon Chart Music Awards - K-pop Contribution Award</b>
+        <li><b>Gaon Chart Music Awards - Album of the Year - 2nd Quarter: Love Yourself: Answer</b>
+        <li><b>Gaon Chart Music Awards - Album of the Year - 3rd Quarter: Love Yourself: Answer</b>
+        <li><b>2019 MTV Millenial Awards - Explosion K-pop Award</b>
+        <li><b>2019 MTV Millenial Awards - Instagramer Global Award: Jungkook</b>
+          
+    </ul>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2018</h2>
+      <ul>
+      <li> <b>32st Golden Disk Awards</b> - Digital Bonsang / Album of the Year</li>
+      <li> <b>32st Golden Disk Awards</b> - Disk Bonsang / Song of the Year</li>
+      <li> <b>27th Seoul Music Awards</b> - Bonsang Award</li>
+      <li> <b>27th Seoul Music Awards</b> - Daesang Award</li>
+      <li> <b>15th Korean Music Awards</b> — Musician of the Year</li>
+      <li> <b>Global V Live Awards</b> — Global Artist Top 10</li>
+      <li> <b>iF Design Award</b> - Brand Identity Award</li>
+      <li> <b>5th iHeartRadio Music Awards</b> - Best Fan Army</li>
+      <li> <b>5th iHeartRadio Music Awards</b> - Best Boy Band</li>
+      <li> <b> Nickelodeon Kids’ Choice Awards</b> - Favorite Global Music Star</li>
+      <li> <b>Golden Ticket Awards</b> - Domestic Concert Musician Award: The Wings Tour</li>
+      <li> <b>13th Annual Soompi Awards</b> - Artist of the Year</li>
+      <li> <b>13th Annual Soompi Awards</b> - Album of the Year:You Never Walk Alone</li>
+      <li> <b>13th Annual Soompi Awards</b> - Song of the Year: DNA</li>
+      <li> <b>13th Annual Soompi Awards</b> - Music Video of the Year: Spring Day</li>
+      <li> <b>13th Annual Soompi Awards</b> - Best Collaboration: MIC Drop Remix</li>
+      <li> <b>13th Annual Soompi Awards</b> - Best Choreography: DNA</li>
+      <li> <b>Asian Awards 2018</b> - Outstanding Achievement: Music</li>
+      <li> <b>The Hall of Stars (THOS) Awards 2018</b> - World Category</li>
+      <li> <b>The Hall of Stars (THOS) Awards 2018</b> - Spain Category</li>
+      <li> <b>Radio Disney Music Awards</b> - Best Duo/Group</li>
+      <li> <b>Radio Disney Music Awards</b> - Fiercest Fans</li>
+      <li> <b>Radio Disney Music Awards</b> - Best Song That Makes You Smile: DNA</li>
+      <li> <b>Radio Disney Music Awards</b> - Best Dance Track: MIC Drop (Remix)</li>
+      <li> <b>20th Teen Choice Awards</b> - Choice International Artist</li>
+      <li> <b>20th Teen Choice Awards</b> - Choice Fandom</li>
+      <li> <b>Billboard Music Awards</b> - Top Social Artist Award</li>
+      <li> <b>Gaon Chart Music Awards</b> - Album of the Year – 1st Quarter: YNWA</li>
+      <li> <b>Gaon Chart Music Awards</b> - Album of the Year – 3rd Quarter: LY: Her</li>
+      <li> <b>Soribada Best K-Music Awards</b> — Bonsang Award</li>
+      <li> <b>Soribada Best K-Music Awards</b> — World Social Artist Award</li>
+      <li> <b>Soribada Best K-Music Awards</b> — Daesang Award</li>
+      <li> <b>A' Design Award and Competition</b> - Iron A' Design Award</li>
+      <li> <b>45th Korean Broadcasting Awards</b> - Artist Award</li>
+      <li> <b>Video Music Awards (Japan)</b> - Best Group Video International</li>
+      <li> <b>American Music Awards</b> - Favorite Social Artist</li>
+      <li> <b>YouTube Awards</b> - Diamond Play Button</li>
+      <li> <b>Korea Green Foundation</b> - People Who Made The World Brighter in 2018</li>
+      <li> <b>Korean Popular Culture and Arts Awards</b> - Order Of Cultural Merit</li>
+      <li> <b>Journalists Federation of Korea</b> - Proud Korean Award</li>
+      <li> <b>Korea Popular Music Awards</b> - Bonsang Award</li>
+      <li> <b>Korea Popular Music Awards</b> - Best Album of the Year Love Yourself: Answer</li>
+      <li> <b>Korean Broadcasting Awards</b> — Artist Award</li>
+      <li> <b>MTV Europe Music Awards</b> — Biggest Fans</li>
+      <li> <b>MTV Europe Music Awards</b> — Best Group</li>
+      <li> <b>MTV Millennial Awards</b> — Kpop Revolution</li>
+      <li> <b>MTV Millennial Awards</b> — Fandom of the Year</li>
+      <li> <b>MTV Millennial Awards Brazil</b> — Kpop Explosion</li>
+      <li> <b>MTV Millennial Awards Brazil</b> — Fandom of the Year</li>
+      <li> <b>MTV Video Music Awards Japan</b> — Best Group Video - International</li>
+      <li> <b>MBC Plus X Genie Music Awards</b> — Best Fandom</li>
+      <li> <b>MBC Plus X Genie Music Awards</b> — Best Style</li>
+      <li> <b>MBC Plus X Genie Music Awards</b> — Idol Champ Global Popularity Awar</li>
+      <li> <b>MBC Plus X Genie Music Awards</b> — Genie Music Popularity Award</li>
+      <li> <b>MBC Plus X Genie Music Awards</b> — Male Group Award</li>
+      <li> <b>MBC Plus X Genie Music Awards</b> — Best Music Video: Idol</li>
+      <li> <b>MBC Plus X Genie Music Awards</b> — Dance Track (Male): Idol</li>
+      <li> <b>MBC Plus X Genie Music Awards</b> — Digital Album of the Year: LY:Answer</li>
+      <li> <b>MBC Plus X Genie Music Awards</b> — Artist of the Year</li>
+      <li> <b>E! People's Choice Awards</b> — Group of the Year</li>
+      <li> <b>E! People's Choice Awards</b> — Social Celebrity of the Year</li>
+      <li> <b>E! People's Choice Awards</b> — Song of the Year: Idol</li>
+      <li> <b>E! People's Choice Awards</b> — Music Video of the Year: Idol</li>
+      <li> <b>Asia Artist Awards</b> — Popularity Award</li>
+      <li> <b>Asia Artist Awards</b> — Korean Tourism Appreciation Award</li>
+      <li> <b>Asia Artist Awards</b> — Fabulous Award</li>
+      <li> <b>Asia Artist Awards</b> — Artist of the Year – Music</li>
+      <li> <b>Asia Artist Awards</b> — Artist Daesang</li>
+      <li> <b>Melon Music Awards</b> — Netizen Popularity Award</li>
+      <li> <b>Melon Music Awards</b> — Kakao Hot Star Award</li>
+      <li> <b>Melon Music Awards</b> — Top 10 Artists</li>
+      <li> <b>Melon Music Awards</b> — Rap/HipHop Award</li>
+      <li> <b>Melon Music Awards</b> — Global Artist Award</li>
+      <li> <b>Melon Music Awards</b> — Album of the Year: LY: Answer</li>
+      <li> <b>Melon Music Awards</b> — Artist of the Year</li>
+      <li> <b>Mnet Asian Music Awards (MAMAs)</b> — Mwave Global Fans' Choice: Fake Love</li>
+      <li> <b>Mnet Asian Music Awards (MAMAs)</b> — TikTok Best Music Video: Idol</li>
+      <li> <b>Mnet Asian Music Awards (MAMAs)</b> — Favorite Music Video: Idol</li>
+      <li> <b>Mnet Asian Music Awards (MAMAs)</b> — Artist of the Year</li>
+      <li> <b>Mnet Asian Music Awards (MAMAs)</b> — Worldwide Icon of the Year</li>
+      <li> <b>Mnet Asian Music Awards (MAMAs)</b> — Worldwide Fans' Choice Top 10</li>
+      <li> <b>Mnet Asian Music Awards (MAMAs)</b> — Favorite Dance Artist (Male)</li>
+      <li> <b>Mnet Asian Music Awards (MAMAs)</b> — Best Asian Style</li>
+      <li> <b>Mnet Asian Music Awards (MAMAs)</b> — Album of the Year: Love Yourself: Tear</li>
+</ul>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>2017</h2>
+      <ul>
+<li><b>January 14, 2017</b> - BTS won "Globak K-Pop Artist Award" at the 31st Golden Disc Awards, A very huge award.
+<li><b>January 19, 2017</b> - BTS won another "Bonsang Award" at the 26th Seoul Music Awards.
+<li><b>February 2017</b> - BTS ranked Number Five at Forbes Korea Power Celebrity.
+<li><b>February 12, 2017</b> - Their Fifteenth MV "Spring Day" was released, Another Masterpiece from them.
+<li><b>February 13, 2017</b> - WINGS album was reissued under the title "You Never Walk Alone" and became the group's highest selling album while earning the title "Million Sellers".
+<li><b>February 18 </b>- December 10, 2017 - BTS had their Second World Tour "2017 Live Trilogy Episode III: The Wings Tour and was held on South Korea, Chile, Brazil, United States, Australia, Philippines, Indonesia, Hong Kong, Japan, Taiwan, Macau and Thailand, with a Total of 40 Concerts. The tour gathered 550,000 fans, making it the band's biggest tour.
+<li><b>February 19, 2017 </b>- Days after "Spring Day" was released and their World Tour, Their Sixteenth MV "Not Today" was released, Another Hit from them that caught the attention of many people around the World.
+<li><b>February 22, 2017</b> - BTS won their Third Daesang "Album of the Year" at the 6th Gaon K-Pop Chart Awards.
+<li><b>May 21, 2017</b> - BTS won as "Top Social Artist Award" at the Billboard Music Awards, which gave them so many Opportunities and Advantages Worldwide, A Big Step on their Worldwide Domination.
+<li><b>July 31, 2017 </b>- BTS win "Artist Award" at the 44th Korean Broadcasting Awards.
+<li><b>September 05, 2017</b> - BTS reached 8 Million Twitter followers and Is currently the most followed Korean Artist in Twitter.
+<li><b>September 16, 2017 </b>- BTS Hits 6 Million Followers on Their V Live Channel.
+<li><b>September 18, 2017</b> - Their Fifth Mini Album "Love Yourself: HER" was released, An Album of Success and True Art.<br>
+- On the Same day, Their Seventeenth MV "DNA" was released.<br>
+- DNA becomes the First K-Pop Group single to hit U.S. iTunes Top 10 at Fourth Position.<br>
+- DNA's MV becomes the Eleventh most viewed video of all-time in first 24 hours and Becomes the Fastest K-Pop Music Video by a Group to reach 10 Million Views in Youtube.<br>
+<li><b>September 19, 2017</b> - BTS becomes the First Korean Artist to enter Spotify's Global Top 50 Chart at 50th Place.<br>
+- DNA became the Fastest K-Pop Music Video by a Group to reach 20 Million Views on Youtube.
+<li><b>September 20, 2017</b> - DNA became the Fastest K-Pop Music Video by a Group to reach 30 Million Views on Youtube.
+<li><b>September 21, 2017</b> - BTS held First ever comeback showcase which is live streamed worldwide.
+<li><b>September 22, 2017 </b>- Love Yourself: Her entered United Kingdom's Official Charts at No. 14, breaking their personal record of Nom 62 with "WINGS".<br>
+- In addition, The Album ranked on other European Album Charts including No. 13 on Sverigetopplistan (Sweden), No. 19 on Ultratop (Sweden), No. 19 on IRMA (Ireland), No. 56 on Top of the Music (Italy), and No. 57 on the Offizielle Deutsche Charts (Germany).<br>
+- DNA is now the Fastest K-Pop Group MC to reach 40 Million Views, after taking just over 3 days and 15 hours to reach the Number.
+<li><b>September 24, 2017</b> - BTS has broken another record as viess continue to rise on the Music Video for their New Song "DNA", the music video hit 50 Million Views on Youtube! It reached this milestone in just over 5 days and 18 hours, thus set a new record as the fastest K-Pop group MV to hit 50 Million Views.
+<li><b>September 25, 2017</b> - BTS Becomes the first K-Pop group to hit the Billboard Hot 100, DNA at 85th position.<br>
+- BTS Becomes the first K-Pop group to hit the Billboard 200, Love Yourself: Her at 7th Position.<br>
+- BTS took the No. 2 spot on Oricon Daily Album Chart.
+<li><b>September 26, 2017</b> - BTS comes at No. 1 on the World Albums Chart this week with their New Album. Their title track "DNA" is also No. 37 on the Digital Song Sales chart, while "Love Yourself: Her" is at No. 6 on the Top Album Sales chart and No. 3 on the Digital Albums chart. The mini album is also at No. 3 on the Independent Albums chart, and No. 3 on the Canadian Albums chart. <br>
+- BTS has also risen to No. 5 on the Artist 100 chart, which is determined by radio airplay, sales data, streaming data, and Social 50 activity. The group also remains at No. 1 on Billboard's Social 50 chart.
+<li><b>September 27, 2017</b> - DNA reached 60 Million views on Youtube, The Fastest K-Pop Group MV to hit 60 Million views, was achieved in a record-breaking 8 days, 6 hours and 50 minutes.
+<li><b>September 30, 2017 </b>- DNA reaches 70 Million views on Youtube, The Fastest K-Pop Group MV to hit 70 Million Views, was achieved in just 11 days and 12 hours.
+<li><b>October 03, 2017</b> - On October 3, the group took No. 1 on Oricon's weekly album chart. What made it even more impressive was that they were able to do so with their Korean album, without promotions, attesting to the group's popularity overseas.
+<li><b>October 04, 2017</b> - DNA finally surpassed 80 Million Views on Youtube making it the Fastest K-Pop Group MV to reach this milestone, was achieved in just 15 days and 9 hours.<br>
+- Love Yourself: Her first debuted on the Billboard 200 last week at No. 7, and has remained on the newly released chart for the week ending in October 14. "Love Yourself: Her" is now at No. 25 on the chart, which ranks the most popular albums in the United States.<br>
+- "DNA" has made its debut on the Canadian Hot 100 chart at No. 47. Meanwhile, "Love Yourself: Her" has secured a spot on the Canadian Albums chart for the second week, this time coming in at No. 24 after debuting at No. 3 last week.<br>
+- BTS is No. 9 on the Artist 100 chart after reaching No. 5 last week, and the group continues to rule over the Social 50 chart at No. 1.
+<li><b>October 08, 2017 </b>- DNA reached 90 Million Views, and again, The Fastest K-Pop Group MV to reach this Milestone, in just 19 days and 19 hours.
+<li><b>October 12, 2017 </b>- DNA finally reached 100 Million views making it the Fastest K-Pop Group NV to reach this Milestone, was achieved in just 24 days and I hour.<br>
+- BTS reached 9 Million Twitter Followers and still the most followed Korean artist in Twitter.
+<li><b>October 13, 2017 </b>- Gaon Chart released their official monthly album chart for September 2017 showing BTS's "Love Yourself: Her" at No. 1. After being released on September 18, 1,203,533 copies of the album have been sold. These sales are the highest in Gaon Chart history for one album (not a repackaged album). Previously, g.o.d. sold 1,441,209 copies of their fourth album in 2001. This means that this is the first time 1.2 million copies of one album have been sold in 16 years.
+<li><b>November 12, 2017</b> - BTS is the first korean artist to reach 10 Million Followers on Twitter making then the most Followed Korean Artist.<br>
+- DNA reached 150 Million views in just 54 days making it the Fastest K-Pop Group MV to reach the milestone.
+<li><b>November 14, 2017 </b>- Guested at The Late Late Show with James Corden (Recording)
+<li><b>November 15, 2017</b> - BTS had a Mini Concert at Jimmy Kimmel Live.
+<li><b>November 19, 2017</b> - BTS is the First K-Pop Group to perform at the American Music Awards, stealing the Highlight.
+<li><b>November 21, 2017 </b>- BTS starts recording for their Guesting at The Ellen Shown
+<li><b>November 25, 2017</b>- MIC Drop Remix took the 75th Place on Spotify's Global Top 200 and 74th Place on U.S. Top 200 Chart.<br>
+- BTS's "MIC Drop Remix" recorded 13,987,276 views Making it the Second Fastest K-Pop Group MV to reach this milestone.<br>
+- MIC Drop remix has topped over iTunes song charts in over 60 regions worldwide, including in the United States, Argentina, Azerbaijan, Belarus, Brazil, Brunei, Bulgaria, Cambodia, Canada, Chile, Costa Rica, Dominican Republic, El Salvador, Estonia, Finland, Hong Kong, Indonesia, Ireland, Iceland, Kazakhstan, Latvia, Lithuania, Macao, Malaysia, Mexico, New Zealand, Norway, Panama, Paraguay, Peru, Philippines, Poland, Portugal, Romania, Russia, Singapore, Slovenia, Sweden, Taiwan, Thailand, Turkey, Ukraine, and Vietnam. Notably, BTS is the first K-pop group to specifically top the US iTunes Top Songs chart, and the second act to do so after PSY.
+<li><b>November 27, 2017 </b>- Broadcasting their Guesting at The Ellen Show
+<li><b>December 01, 2017 </b>- the Official Charts updated with rankings for the week from December 1 to 7.BTS's MIC Drop has grabbed No. 46 on this week's Official U.K. Singles Chart Top 100, which ranks the biggest songs in the United Kingdom each week based on sales of downloads, CDs, vinyl, and audio streams. This is BTS's second track to enter the Official U.K. Singles Chart, following "DNA" which peaked at No. 90.<br>
+-BTS won a Daesang "Artist Of The Year". They also won "Best Music Video" for Spring day, and "Best Asian Style In Hongkong" at the 2017 MNET Asian Music Awards.
+<li><b>December 02, 2017 </b>- BTS took home four awards this year as group: Best Song of the Year for "Spring Day," Global Artist Award, Top 10 Award, and Best Music Video Award for "DNA." Additionally, member Suga took home the Hot Trend award, along with Suran for the song he produced – "Wine" – for the singer. BTS now has won award in every Daesang category – Song, Album, and Artist  – across the Melon Music Awards and Mnet Asian Music Awards combined.
+<li><b>December 04, 2017</b> - Billboard announced that BTS's "MIC Drop" has grabbed the No. 28 spot on the Hot 100 chart for the week ending in December 16. The chart measures the most popular songs in the United States each week, with rankings determined by radio play, sales data, and streaming activity data.<br>
+-According to Nielsen Music, "MIC Drop" has reached No. 28 on the Hot 100 chart with 9.8 million streams in the United States in the first week and 45,000 downloads sold. Billboard has also noted that "MIC Drop" has received more radio play than BTS's previous Hot 100 single "DNA."<br>
+-"MIC Drop" has also entered the Digital Song Sales chart at No. 4 (after "DNA" peaked at No. 37) and at No. 47 on the Streaming Songs chart (following "DNA" which came in at No. 38).
+<li><b>December 07, 2017</b> - BTS released their eighth Japanese single "MIC Drop/DNA/Crystal Snow" on December 6 in Japan, and "Crystal Snow" is an original Japanese song by the group. The single has been a huge hit in Japan, topping the Oricon daily singles chart and recording first-day sales of 342,655 albums.<br>
+The song "Crystal Snow" has also had great success outside of Japan as well. It has taken the No. 1 spot on over 10 iTunes Top Songs charts, including in Sweden, Slovenia, Hong Kong, Philippines, Thailand, Vietnam, Saudi Arabia, El Salvador, Nicaragua, and the United Arab Emirates<br>
+- The Social 50 is powered by data tracked by music analytics company Next Big Sound and ranks the most popular artists on Facebook, Twitter, Instagram, YouTube, Wikipedia and Tumblr. The chart's methodology blends weekly additions of friends/fans/followers along with artist page views and engagement.<br>
+The chart's latest tracking week ended Dec. 7, and BTS is No. 1 for a 52nd nonconsecutive week, and the 22nd week in a row. Since debuting on the list dated Oct. 29, 2016, BTS has never ranked below No. 2. That sustained strong performance resulted in the act being named the year-end top Social 50 artist.
+<li><b>December 10, 2017</b> - BTS held their Last Concert on Gocheok Sky Dome in Seoul for their 2017 BTS Live Trilogy Episode III:The Wing Tour and also The End of Wings Era.
+<li><b>December 13, 2017 </b>- BTS reached 11 Million followers on Twitter making it the First Korean to reach the milestone.
+<li><b>December 15, 2017 </b>- BTS rules this week's Billboard Japan Hot 100 dated Dec. 4 to 10 with "MIC Drop," selling 453,721 CDs and coming in at No. 1 for physical sales and No. 2 for look-ups.<br>
+The single also came in at No. 4 for Twitter mentions and No. 24 for video view counts, but its strength in the physical metrics of the chart's measurement left the competition far behind and helped fuel its rise to the top spot on the latest weekly Japan Hot 100.<br>
+BTS also has two other songs charting in the top 20 this week, with "DNA" at No. 10 and "Crystal Snow" at No. 19. What's remarkable about these two entries is that both have no physical sales points, so the songs were powered only by digital metrics: downloads, streaming, Twitter and video views. The septet has always had a strong following in Japan -- "Crystal Snow" is sung mostly in Japanese -- but this year's breakthrough success in the U.S. has lifted their stardom to the next level.<br>
+- BTS also reaches 7 Million Followers on their Official VLive Account.
+<li><b>December 16, 2017 </b>- Shawn Mendes said he'd Love to have a Collaboration with BTS
+<li><b>December 17, 2017 </b>- BTS's "DNA" has reached 200 million views on YouTube! This is the group's fourth music video to hit the milestone. "DNA" is also the fastest K-pop music video to hit 200 million, doing so just 89 days, 16 hours, and 35 minutes after release.
+<li><b>December 24, 2017 </b>- Jungkook releases Oh Holy Night
+<li><b>December 31, 2017 </b>- A performance by BTS will air throughout the United States as part of New Year's Rockin' Eve.
+</ul>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2016</h2>
+      <ul>
+<li><b>January 14, 2016</b> - BTS won their Second "Bonsang Award" at the 26th Seoul Music Awards.
+<li><b>January 21, 2016</b> - BTS win their Third "Bonsang Award" at the 30th Golden Disc Awards
+<li><b>February 17, 2016</b> - BTS Won "World K-Pop Star Award" at the 5th Gaon Chart K-Pop Awards.
+<li><b>April 19, 2016</b> - Their Eleventh MV "Young Forever" was released.
+<li><b>May 01, 2016</b> - Their Twelfth MV "FIRE" was released, and wrecked all ARMYs Favorite BTS song and made them even more popular on Worldwide scale.
+<li<b>>May 02, 2016</b> - Their First Compilation Album (Dark & Wild is their first Full Length Album and Skool Luv Affair Special Edition is their First Repackaged Album) "The Most Beautiful Moment In Life: Young Forever" was released.
+<li><b>May 15, 2016 </b>- Their Thirteenth MV "Save Me" was released, and the famous "Dance with no Lyrics" made them also popular.
+<li><b>September 07, 2016 </b>- Their Second Japanese Album "Youth" was released.
+<li><b>October 09, 2016</b> - Their Fourteenth MV "Blood Sweat & Tears" was released, with it's extremely unique Aesthetic Theme which made them More Popular.<br>
+- On the Same day, "Blood Sweat & Tears" Achieves All-Kill, Peaking No. 1 at Melon, MNET, Bugs, olleh, Soribada, Genie, Naver and Monkey 3 Charts. In addition, all 15 tracks from the album have take the top 15 spots on Melon, Genie, MNET, and Naver Music.
+<li><b>October 10, 2016</b> - After the great Impact of Blood Sweat & Tears, Their Second Full Length Album "Wings" was released, One of the most successful and best selling K-Pop album.
+<li><b>October 27, 2016</b> - BTS won "Cultural Minister Award" at the Korean Poo Culture & Arts Awards.
+<li><b>October 29, 2016</b> - BTS Hits at First Position on Billboard Social 50 Chart.<br>
+- On the Same day, BTS hits First Position on World Digital Songs Chart with "WINGS".
+<li><b>November 01, 2016 </b>- BTS Sells out their WINGS Tour and adds additional date.
+<li><b>November 19, 2016</b> - BTS won their Very first Daesang "Best Album of the Year" at the Melon Music Awards, which made them very emotional because of such a surprise, This award also made their First Step on Worldwide Domination.
+<li><b>December 02, 2016</b> - BTS won their Second Daesang "Artist of the Year" at the MNET Asian Music Awards, Another Huge Milestone for them.
+</ul>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>2015</h2>
+      <ul>
+<li><b>January 15, 2015 </b>- BTS won their First "Bonsang Award" at the 29th Golden Disc Awards.
+<li><b>January 23, 2015 </b>- BTS won their First award on 25th Seoul Music Awards as the "New Artist of the Year".
+<li><b>February 10 - 19, 2015</b> - BTs had their First Japanese Tour "Wake Up: Open Your Eyes".
+<li><b>March 08</b> - BTS had their First World Tour "2015 Live Trilogy Episode II: The Red Bullet and was held on Kuala Lumpur, Sydney, Melbourne, New York City, Dallas, Chicago, Los Angeles, Mexico, São Paulo, Chile, Bangkok, and Hongkong. This tour was the continuation of 2014 BTS Live Trilogy Episode II: The Red Bullet, the first half, which includes cities in Asia.
+<li><b>April 29, 2015 </b>- Their Eight MV "I Need U" was released and gave them an even more Popularity overseas.<br>
+- On the same day, BTS Third Mini Albun "The Most Beautiful Moment In Life Pt. 1" was released.
+<li><b>May 05, 2015 </b>- BTS had their First Win for title track "I Need U" on SBS MTV's The Show.
+<li><b>June 04, 2015 </b>- Their First Japanese Single MV "For You" was released.
+<li><b>June 23, 2015</b> - Their Ninth MV "DOPE" was released, and is their Most Popular Single among the previous Singles.
+<li><b>June 30, 2015</b> - Dope hits 3rd Position on Billboard's World Digital Chart, Making it their First Biggest Milestone in Billboard's World Digital Chart.
+<li><b>April 29, 2015</b> - Their Third Extended play or Third Mini Album "The Most Beautiful Moment In Life"
+<li><b>August 29, 2015</b> - BTS held their Last Concert for 2015 BTS Live Trilogy Episode II: The Red Bullet in AsiaWorld-Arena in Hongkong with 4,000 attendees.
+<li><b>August 30, 2015</b> - They Performed "DOPE" Exclusively at Billboard Studios.
+<li><b>October 26, 2015 </b>- BTS Became the Brand Ambassadors for PUMA.
+<li><b>November 07, 2015</b> - They won their Second Award on the 2015 Melon Music Awards as the "Best Dance Male".
+<li><b>November 29, 2015</b> - Their Tenth MV "Run" was released.
+<li><b>November 30, 2015</b> - A day after "Run" was released, Their Fourth Mini Album "The Most Beautiful Moment in Life Pt. 2" was released.
+<li><b>December 02, 2015 </b>- BTS won as the "Best World Performer" at the 2015 MNET Asian Music Awards.
+</ul>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2014</h2>
+      <ul>
+<li><b>January 01, 2014</b> - They won their Second Award "Rookie of the Year" On the 28th Golden Disc Awards.<br>
+<li>February 11, 2014</b> - Their Fourth MV "Boy In Luv" was released, and also made them more popular.<br>
+<li><b>February 12, 2014 </b>- They won their Third Award "New Artist of the Year" on the 3rd Gaon Chart K-Pop Awards.<br>
+- After Winning their First award on Gaon Chart K-Pop Awards, Their Second Mini Album "Skool Luv Affair" was released.<br>
+- On the same day of release, "Boy In Luv" peaks on Billboard World Albums Chart at 3rd Position, Making it their First Biggest Milestone on Billboard World Albums Chart.<br>
+<li><b>April 04, 2014 </b>- Their Fifth MV "Just One Day" was released and is also one of the songs that made them more popular.<br>
+<li><b>April 24, 2014</b> - BTS had their Japanese Debut with "Wake Up".<br>
+<li><b>May 14, 2014 </b>- Their First Repackaged Album "Skool Luv Affair Special Edition" was released".<br>
+<li><b>July 1 - 14, 2014 </b>- BTS Starred in their first TV Show "American Hustle Life".
+<li><b>July 14, 2014</b> - BTS 2014 SHOW & PROVE Concert.
+<li><b>August 10, 2014</b> - BTS Attended on KCON LA.
+<li><b>August 19, 2014 </b>- Their Sixth MV "Danger" was released and, again made them even more popular.
+<li><b>August 19, 2014 </b>- BTS First Full Length Album "Dark & Wild" was released.
+<li><b>September 09, 2014 </b>- BTS launched 'Hip Hop Monster' Webtoon Series.
+<li><b>October 21, 2014 </b>- Their Seventh MV "War Of Hormone" was released.
+<li><b>December 03, 2014</b> - BTS had their Very first apperance and performance at 2014 MNET Asian Music Awards.</ul>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>2013</h2>
+      <ul>
+<li><b>June 09, 2013</b> - The Official Member Line-up for BTS was Introduced to the Public.<br>
+<li><b>June 11, 2013 </b>- Days after their very first Public appearance, Their very first MV "No More Dream" was released.<br>
+<li><b>June 12, 2013 </b>- Day after their first MV was released, Their first Single Album "2 Cool 4 Skool" was released.<br>
+<li><b>J  </une 13, 2013 </b>- BTS had their first Stage Debut performing "No More Dream" at M Countdown and was considered their Debut Date.<br>
+<li><b>July 09, 2013</b> - BTS announced their Fandom's Official Name which is A.R.M.Y. or Adorable Representative M.C for Youth and is the Birth of ARMYs!<br>
+<li><b>July 16, 2013 </b>- Their Second MV "We Are Bulletproof Pt. 2" was released.<br>
+<li><b>September 02, 2013</b> - Their Very First TV Show "Rookie King" was aired on SBS.<br>
+<li><b>September 10, 2013 </b>- Their Third MV "N.O" was released.<br>
+<li><b>September 11, 2013 </b>- Their First Mini Album "O!RUL8,2?" was released.<br>
+<li><b>November 14, 2013</b> - They won their First Award "Best New Artist" on Melon Music Awards.</ul>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2012</h2>
+      <p><b>December 17, 2012</b>- The Official Twitter Account of BTS was launched.</p>
+    </div>
+  </div>
+</div>
+<br>
+<h5><center>Credits of content to respective owners.</center></h5>
+</body>
+</html>
